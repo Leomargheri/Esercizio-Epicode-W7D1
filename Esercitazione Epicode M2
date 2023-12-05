@@ -1,0 +1,14 @@
+def lunghezza_parole(lista_parole):
+  
+  lunghezze = []
+
+  for parola in lista_parole:
+      
+      lunghezze.append(len(parola))
+  
+  return lunghezze
+
+lista_parole_input = ["python", "programmazione", "ciao", "inter"]
+lunghezze_output = lunghezza_parole(lista_parole_input)
+
+print("Lista delle lunghezze:", lunghezze_output)
