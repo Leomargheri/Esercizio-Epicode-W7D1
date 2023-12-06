@@ -1,0 +1,18 @@
+import random
+import string
+
+def genera_password(lunghezza_password):
+    lunghezza = 8 if utente_vuole_complessa == 'no' else 20
+    caratteri = string.ascii_letters + string.digits + string.punctuation
+
+    password = ''.join(random.choice(caratteri) for _ in range(lunghezza))
+    return password
+
+utente_vuole_complessa = input("Ciao! Desideri una password complessa? (si/no): ").lower()
+
+if utente_vuole_complessa == 'si':
+    password_generata = genera_password(20)
+elif utente_vuole_complessa == 'no':
+    password_generata = genera_password(8)
+
+print(f"La tua password è: {password_generata}")
